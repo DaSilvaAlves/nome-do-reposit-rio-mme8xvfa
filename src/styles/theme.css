@@ -1,0 +1,51 @@
+:root {
+  --: #0a0a0a;
+  --foreground: #ffffff;
+  --accent: #EEFF00;
+  --font-family: sans-serif;
+}
+
+body {
+  background: var(--background);
+  color: var(--);
+  font-family var(--font-family);
+}
+
+button {
+ : var(--accent);
+  color: var(--background);
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #cccc00;
+}
+
+input[type="text"] {
+  color: var(--foreground);
+  border: 1px solid var(--foreground);
+  padding: .5rem;
+}
+
+input[type="text"]:focus {
+  outline: 1px solid(--foreground);
+}
+
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns repeat(1, 1fr);
+  gap: 1rem;
+}
+
+@media (min-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
